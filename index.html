@@ -16,69 +16,85 @@
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
 </head>
 <body>
-    <h1> Ferrari</h1>
-    <ul>
-        <li><a href="#Historia"> Historia de ferrari</a></li>
-
-    </ul>
-    <h1 id=Historia>Historia de Ferrari</h1>
+    <h1 style="text-align: center;">Ferrari</h1>
+    <div style="text-align: center;">
     <img src="images/Logo.jpg" width="120" height="150"/>
-    <p> La historia de Ferrari comienza con Enzo Ferrari fundando la Escudería Ferrari en 1929 para coches de carreras, separándose de Alfa Romeo para crear su propia marca, Auto Avio Costruzioni en 1939, y finalmente lanzando su primer coche, el 125 S, en 1947, marcando el nacimiento de la legendaria marca de superdeportivos en Maranello, Italia, famosa por su velocidad, lujo y éxito en la Fórmula 1. </p>
-    <a href="https//localhost:3000 /pages/Enzo_Ferrari" >Ver mas sobre enzo ferrari</a>
-    <table border="3" width="500">
+    </div>
+    <p style="text-align: justify;" >Ferrari es sinónimo de excelencia, velocidad y pasión. Desde su fundación en Maranello, Italia, la marca ha representado la perfecta unión entre innovación tecnológica, diseño exclusivo y un legado inigualable en el automovilismo. Cada Ferrari es una obra de arte sobre ruedas, creada para ofrecer emociones intensas, alto rendimiento y una experiencia de conducción única. Más que una marca, Ferrari es un estilo de vida que encarna lujo, potencia y el espíritu competitivo que ha marcado la historia del deporte motor.</p>
+    <ul>
+        <h2>Contenido</h2>
+        <li><a href="#Historia"> Historia de Ferrari</a></li>
+        <li><a href="#Enzo"> Enzo Ferrari</a></li>
+    </ul>
+    <h1 style="text-align: center;" id="Historia">Historia de Ferrari</h1>
+    <div style="text-align: center;">
+    <img src="/images/historia_ferrari.png" width="500" height="330"/>
+    </div>
+    <p> La historia de Ferrari es una historia de pasión, velocidad y perseverancia. Fundada por Enzo Ferrari, la marca transformó el espíritu de las carreras en automóviles legendarios que han dejado huella tanto en las pistas como en las carreteras del mundo. Ferrari simboliza un legado donde la emoción y la excelencia nunca se detienen. </p>
+    <a id="vermashistoria" href="https//localhost:3000 /pages/historia_ferrari.html" >Ver mas sobre la historia de ferrari</a>
+    <h1 id="Enzo" style="text-align: center;">Enzo ferrari</h1>
+    <div>
+    <img src="/images/Enzo_gto.png" width="500" style="display: block; margin-left: auto; margin-right: auto;"/>
+    </div>
+    <p style="text-align: justify;">Enzo Ferrari fue una de las figuras más influyentes en la historia del automovilismo y la industria automotriz. Nacido en Italia en 1898, dedicó su vida a la velocidad, la competición y la excelencia mecánica. Fundador de la legendaria marca Ferrari, Enzo no solo creó automóviles, sino que construyó un símbolo de pasión, lujo y rendimiento. Su carácter fuerte, su obsesión por ganar y su visión innovadora llevaron a Ferrari a convertirse en una de las escuderías más exitosas de la Fórmula 1 y en una de las marcas más admiradas del mundo. Su legado continúa vivo en cada auto que lleva el icónico emblema del caballo rampante.</p>
+    <a id="vermasenzo" href="https//localhost:3000 /pages/Enzo_Ferrari" >Ver mas sobre enzo ferrari</a>
+    <video src="/video/info_ferrari/Enzo_manejando.mp4" width="500" autoplay muted></video>
+    <table border="1" width="890">
+        <tr> 
+            <th id="Registro" colspan="10"> Unete a La Familia Ferrari</th>
+        </tr>
+            
         <tr>
-            <th colspan="10">Modelos Ferrari</th>
+            <td>
+                <label for="Nombre">Nombres:</label>
+                <input type="text" name="Nombre" placeholder="Ingrese su nombre"/>
+            </td>
+            <td>
+                <label for="Apellido">Apellidos:</label>
+                <input type="text" name="Apellido" placeholder="Ingrese su apellido"/>
+            </td>    
+            
+            <td>
+                <label for="Edad">Edad:</label>
+                <input type="number" name="Edad" placeholder="Ingrese su edad"/>
+            </td>
+            <td>
+                <label for="Genero">Genero:</label>
+                <input type="radio" name="Genero" value="M">Masculino
+                <input type="radio" name="Genero" value="F">Femenino
+            </td>
+        </tr>
+        <tr>    
+            <td>
+                <label for="Correo">Correo:</label>
+                <input type="email" name="Correo" placeholder="Ingrese su correo electronico"/>
+            </td>
+            <td>
+                <label for="celular">Numero de Celular:</label>
+                <input type="tel" name="celular" placeholder="Ingrese su numero de celular"/>
+            </td>
+            <td>
+                <label for="Direccion">Direccion:</label>
+                <input type="text" name="Direccion" placeholder="Ingrese su direccion"/>
+            </td>
         </tr>
         <tr>
-            <th>Modelo</th>
-            <th>Motor</th>
-            <th>Año De Fabricacion</th>
-        </tr>
-        <tr>
-            <td>Ferrari F40</td>
-            <td>2.9 litros V8 Biturbo</td>
+            <td colspan="4">
+                <label for="Modelo">Modelo de Auto:</label><br>
+                <input type="radio" name="Modelo" value="911"> Ferrari 488 GTB
+                <input type="radio" name="Modelo" value="Taycan"> Ferrari F8 Tributo
+                <input type="radio" name="Modelo" value="Panamera"> Ferrari LaFerrari
+                <input type="radio" name="Modelo" value="Macan"> Ferrari SF90 Stradale
+                <input type="radio" name="Modelo" value="Cayenne"> Ferrari Portofino
+                <input type="radio" name="Modelo" value="718"> Ferrari Roma
+            </td>
         </tr>
         <tr>
             <td>
-                Ferrari LaFerrari
-            </td>
-            <td>
-                6.3 litros V12 híbrido
+                <label for="confirmar">Confirmar Registro:</label>
+                <input type="checkbox" name="confirmar" value="si"> Si, deseo unirme a la familia Ferrari
             </td>
         </tr>
-    </table>
-    <table width="500">
-        <tr>
-            <th colspan="10"><h3>Unete al Fan Club Ferrari</h3></th>
-        </tr>
-        <tr>
-            <form action="#" method="post" name="Fan_Club_Ferrari" target="_self">
-                <td><label for="nombre">Nombre:</td>
-                <td><input type="text" name="nombre" placeholder="Ingrese el nombre"></td>
-                <td><label for="motivo" >Motivo de union al club?:</label></td>
-                <td><input type="text" name="motivo" placeholder="Motivo de ingreso"></td>
-                <td><label for="genero">Genero</label></td>
-                <td><input type="radio" name="genero" value="M"> Masculino</td>
-                <td><input type="radio" name="genero" value="F"> Femenino</td>
-                <td></td>
-            </form>
-        </tr>
-    </table>
-    
-    
-    
-    <form action="#" method="post" name="Fan_Club_Ferrari" target="_self">
-        <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre" placeholder="Ingrese el nombre">
-        <label for="motivo" >Motivo de union al club?:</label>
-        <input type="text" name="motivo" placeholder="Motivo de ingreso">
-        <label for="genero">Genero</label>
-        <input type="radio" name="genero" value="M"> Masculino
-        <input type="radio" name="genero" value="F"> Femenino
-
-
-    </form>
-
-    
+    </table> 
 </body>
 </html>
